@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: orangered;
+  --text-light: white;
+  --text-dark: black;
+  --light-bg: rgb(241, 241, 241);
+  --dark-bg: rgba(0,0,0,0.8);
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--light-bg);
+  z-index: 99;
+}
+
+.Skills_section, .contact_section {
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--light-bg);
+  z-index: 99;
+}
+
+.Nav__Content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Skills_content, .Projects_content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  align-items: center;
+}
+
+.contact_content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  align-items: center;
+}
+
+nav .Logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.Skills_title, .Projects_title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.contact_title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.Contact_boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .Checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .Checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.About_Section, .Projects_section {
+  background-color: var(--dark-bg);
+}
+
+footer {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+  display: flex;
+}
+
+.copyright {
+  display: inline-block;
+  margin: auto;
+}
+
+.Section__Container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.Title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.Title span {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.Description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.Project_Description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin: auto;
+}
+
+.Action__Btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.project_action_btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.project_action__btn button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Action__Btn button {
+  color: var(--text-light);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.Resume {
+  background-color: var(--primary-color);
+  color: var(--extra-light);
+}
+
+.Repository {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+.Image {
+  display: grid;
+  place-items: center;
+}
+
+.Image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 15px;
+  padding: 40px;
+  border: 2px solid #ccc;
+  border-radius: 15%;
+}
+
+.contact_center {
+  display: inline-block;
+  margin: auto;
+}
+
+.Contact_box {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: auto;
+}
+
+.Skills_image {
+  margin: auto;
+}
+
+.Contact_icon {
+  margin-right: 10px;
+}
+
+.Contact_content {
+  padding: 0;
+  margin: 0;
+}
+
+.Content {
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row {
+  display: flex;
+  margin: 8px -16px;
+  flex-flow: row wrap;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content1 {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media (width < 750px) {
+  nav .Checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--light-bg);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    z-index: 99;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .Section__Container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Image {
+    grid-area: 1/1/2/2;
+  }
+
+  .Action__Btn {
+    margin: auto;
+  }
+}
