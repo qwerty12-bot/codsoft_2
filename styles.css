@@ -290,23 +290,23 @@ footer {
   font-weight: 600;
 }
 
-.row {
+.Row {
   display: flex;
   margin: 8px -16px;
   flex-flow: row wrap;
 }
 
-.row,
-.row > .column {
+.Row,
+.Row > .Column {
   padding: 8px;
 }
 
-.column {
+.Column {
   float: left;
   width: 25%;
 }
 
-.row:after {
+.Row:after {
   content: "";
   display: table;
   clear: both;
@@ -322,13 +322,13 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  .column {
+  .Column {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .Column {
     width: 100%;
   }
 }
